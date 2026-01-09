@@ -1,0 +1,15 @@
+.importButton{
+    position:fixed;
+    right:0;
+    bottom:0;
+    font-size:30px!important;
+    margin:30px;
+    padding: 16px 32px;
+    border-radius:10px;
+    cursor: pointer;
+    z-index: 10;
+    box-shadow: 3px 3px 3px black;
+}
+.importButton:hover{
+    box-shadow:5px 5px 4px black;
+}

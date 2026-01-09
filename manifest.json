@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "version":"1.0.0",
+    "name":"MM EE",
+    "action":{
+        "default_popup":"index.html"
+    },
+    "permissions":[
+        "scripting","tabs","storage"
+    ],
+    "host_permissions":[
+        "<all_urls>"
+    ],
+    "content_scripts":[
+        {
+            "matches":["https://www.novelupdates.com/reading-list/*"],
+            "js":["src/content-scripts/button-content-script.tsx"],
+            "run_at": "document_idle"
+        }
+    ],
+    "background":{
+        "service_worker":"src/service-worker.ts",
+        "type":"module"
+    }
+}
